@@ -122,7 +122,6 @@ nav a:hover{
 .child-competence{
     background: #808080;
     color: #101010;
-    text-align: justify;
     margin: 0px 15px;
     padding: 30px;
     max-width: 450px;
@@ -131,6 +130,10 @@ nav a:hover{
 
 .child-competence h3{
     font-size: 2em;
+}
+
+.child-competence p{
+    text-align: justify;
 }
 
 .aside{

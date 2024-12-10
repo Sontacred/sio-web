@@ -1,0 +1,272 @@
+*{
+    background: none;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(img/P3R3.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+/* ----- NAVBAR ----- */
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FF5757 transparent; /* MODIFIER */
+    font-size: 1em;
+    width: 100vw;
+    z-index: 10;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none; /* MODIFIER */
+    padding: 15px 10px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none; /* MODIFIER */
+    padding: 15px 10px;
+}
+
+nav a{
+    color: #FFFFFF; /* MODIFIER */
+    backdrop-filter: blur(20px);
+    font-weight: 800;
+    margin: 0px 8px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    transition: 150ms;
+}
+
+nav a:hover{
+    background: #ababab;
+    transition: 150ms;
+}
+
+.menu{
+    display: none;
+}
+
+/* ----- MAIN ----- */
+
+.main{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none; /* MODIFIER */
+    width: 100%;
+    height: 100vh;
+}
+
+.principal h1{
+    text-transform: uppercase;
+    font-size: 8em;
+    font-weight: 800;
+}
+.principal h2{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #101010; /* MODIFIER */
+    border-top: 1px solid #ffffff; /* MODIFIER */
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+}
+
+.container h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: none;
+    height: fit-content;
+    margin: 30px;
+    width: 100%;
+}
+
+.child-competence{
+    background: #808080;
+    color: #101010;
+    margin: 0px 15px;
+    padding: 30px;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+.child-competence h3{
+    font-size: 1.5em;
+    margin: 10px 0px;
+}
+
+.child-competence p{
+    text-align: justify;
+}
+
+button{
+    background: #333333;
+    color: #FFFFFF;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 100px;
+    transition: 150px;
+}
+button:hover{
+    background: #FF5757;
+    cursor: pointer;
+    transition: 150px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #000000; /* MODIFIER */
+    color: #bababa; /* MODIFIER */
+    border-top: 1px solid #FFFFFF;
+    padding: 10px 0px;
+}
+footer a{
+    text-decoration: underline;
+    color: #bababa; /* MODIFIER */
+    margin-left: 10px;
+}
+
+footer a:hover{
+    color: #FFFFFF;
+}
+
+/* ----- PAGE : # ----- */
+
+
+/* ----- PAGE : # ----- */
+
+
+/* ----- PAGE : # ----- */
+
+
+/* ----- PAGE : # ----- */
+
+
+/* ----- MEDIA ----- */
+
+@media only screen and (max-width: 550px){
+
+   /* ----- NAVBAR ----- */
+
+   .nav-right{
+    display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .nav-left{
+        padding: 15px 0px;
+    }
+
+    .nav-right{
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: #101010;
+        backdrop-filter: blur(40px);
+        border-right: 2px solid #FFFFFF;
+        width: 100%;
+        height: 100vh;
+        margin-left: -110%;
+        transition: 150ms;
+    }
+
+    .nav-right.mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav-right a{
+        margin: 25px;
+        font-size: 1.2em;
+    }
+
+    .nav-right a:hover{
+        background: none;
+    }
+   
+   /* ----- MEDIA ----- */
+
+   .principal h1{
+    font-size: 3em;
+    }
+    .principal h2{
+    font-size: 0.8em;
+    }
+
+   .parent{
+    flex-direction: column;
+    }
+
+    .child-competence{
+        margin: 10px 20px;
+    }
+
+   /* ----- MEDIA ----- */
+
+
+
+   /* ----- MEDIA ----- */
+
+
+
+   /* ----- MEDIA ----- */
+
+
+
+   /* ----- MEDIA ----- */
+
+
+}

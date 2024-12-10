@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby - Lucas ELANA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="#">ACCUEIL</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">Présentation</a>
+            <a href="#">Compétences</a>
+            <a href="#">Projet</a>
+            <a href="#">Contact</a>
+        </div>
+        <a href="#" class="menu">MENU</a>
+    </nav>
+
+    <main class="main">
+        <div class="principal">
+            <h1>Lucas ELANA</h1>
+            <h2>1ère année - Service Informtique aux Organisations</h2>
+        </div>
+        <div class="container">
+            <h1>Compétences</h1>
+            <div class="parent">
+                <div class="child-competence">
+                    <img src="img/LOGO-HTML.png" height="60px" width="60px">
+                    <img src="img/LOGO-CSS.png" height="60px" width="60px">
+                    <h3>HTML / CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum ea excepturi dolorum, ex accusamus voluptates aliquam molestiae numquam, praesentium alias! Molestias alias officia quam laudantium similique incidunt hic fuga.</p>
+                </div>
+                <div class="child-competence">
+                    <img src="img/LOGO-Python.png" height="60px" width="60px">
+                    <h3>PYTHON</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum ea excepturi dolorum, ex accusamus voluptates aliquam molestiae numquam, praesentium alias! Molestias alias officia quam laudantium similique incidunt hic fuga.</p>
+                </div>
+                <div class="child-competence">
+                    <img src="img/LOGO-Linux.png" height="60px" width="60px">
+                    <h3>LINUX</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum ea excepturi dolorum, ex accusamus voluptates aliquam molestiae numquam, praesentium alias! Molestias alias officia quam laudantium similique incidunt hic fuga.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Projets</h1>
+            <div class="parent">
+                <div class="child-competence">
+                    <h3>Sites internet - HTML et CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum ea excepturi dolorum, ex accusamus voluptates aliquam molestiae numquam, praesentium alias! Molestias alias officia quam laudantium similique incidunt hic fuga.</p>
+                    <a href="index.html">
+                        <button>Parcourir</button>
+                    </a>                
+                </div>
+                <div class="child-competence">
+                    <h3>Gestion de zoo avec python</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum ea excepturi dolorum, ex accusamus voluptates aliquam molestiae numquam, praesentium alias! Molestias alias officia quam laudantium similique incidunt hic fuga.</p>
+                    <a href="#">
+                        <button>Parcourir</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Contact</h1>
+        </div>
+    </main>
+    
+    <footer>
+        &copy; 2024, by Sontacred
+        <a href="#">repository</a>
+        <a href="#">information</a>
+        <a href="#">contact</a>
+    </footer>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-right")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>

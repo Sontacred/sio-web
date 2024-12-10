@@ -122,6 +122,7 @@ nav a:hover{
 .child-competence{
     background: #808080;
     color: #101010;
+    text-align: justify;
     margin: 0px 15px;
     padding: 30px;
     max-width: 450px;
@@ -129,12 +130,15 @@ nav a:hover{
 }
 
 .child-competence h3{
-    font-size: 1.5em;
-    margin: 10px 0px;
+    font-size: 2em;
 }
 
-.child-competence p{
-    text-align: justify;
+.aside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 button{
@@ -233,11 +237,17 @@ footer a:hover{
         font-size: 1.2em;
     }
 
-    .nav-right a:hover{
+    nav a:hover{
         background: none;
     }
+
+    /* ----- FOOTER ----- */
+
+    footer{
+        font-size: 0.8em;
+    }
    
-   /* ----- MEDIA ----- */
+   /* ----- PORTFOLIO ----- */
 
    .principal h1{
     font-size: 3em;
@@ -252,21 +262,26 @@ footer a:hover{
 
     .child-competence{
         margin: 10px 20px;
+        font-size: 0.8em;
+    }
+    .child-competence h3{
+        font-size: 1.8em;
     }
 
-   /* ----- MEDIA ----- */
+    .child-competence img{
+        height: 30px;
+        width: 30px;
+    }
+
+   /* ----- # ----- */
 
 
 
-   /* ----- MEDIA ----- */
+   /* ----- # ----- */
 
 
 
-   /* ----- MEDIA ----- */
-
-
-
-   /* ----- MEDIA ----- */
+   /* ----- # ----- */
 
 
 }

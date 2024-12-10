@@ -59,9 +59,60 @@ nav a:hover{
     display: none;
 }
 
-/* ----- MAIN ----- */
+/* ----- FOOTER ----- */
 
-.main{
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #101010; /* MODIFIER */
+    color: #bababa; /* MODIFIER */
+    border-top: 1px solid #FFFFFF;
+    padding: 10px 0px;
+}
+footer a{
+    text-decoration: underline;
+    color: #bababa; /* MODIFIER */
+    margin-left: 10px;
+}
+
+footer a:hover{
+    color: #FFFFFF;
+}
+
+/* ----- PAGE : LOBBY ----- */
+
+.lobby-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #101010;
+    color: #FFFFFF;
+    font-size: 5em;
+    font-weight: 700;
+    height: 96vh;
+}
+
+.lobby-main a{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 10px 0px;
+}
+
+.lobby-main a:hover{
+    color: #FF5757;
+}
+
+.lobby-footer{
+    position: fixed;
+    width: 100vw;
+}
+
+/* ----- PAGE : PORTFOLIO ----- */
+
+.portfolio-main{
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -119,7 +170,7 @@ nav a:hover{
     width: 100%;
 }
 
-.child-competence{
+.child{
     background: #808080;
     color: #101010;
     margin: 0px 15px;
@@ -128,11 +179,12 @@ nav a:hover{
     border-radius: 8px;
 }
 
-.child-competence h3{
+.child h3{
     font-size: 2em;
+    margin: 10px 0px;
 }
 
-.child-competence p{
+.child p{
     text-align: justify;
 }
 
@@ -141,11 +193,39 @@ nav a:hover{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+}
+
+.trackbarA{
+    display: flex;
+    justify-content: space-between;
+    background: #101010;
+    color: #FFFFFF;
+    font-weight: 900;
+    margin-top: 10px;
+    padding: 5px 10px 5px 5px;
+    border-radius: 100px;
+}
+
+.trackbarB-htmlcss{
+    background: #FFFFFF;
+    width: 88%;
+    border-radius: 100px;
+}
+
+.trackbarB-python{
+    background: #FFFFFF;
+    width: 50%;
+    border-radius: 100px;
+}
+
+.trackbarB-linux{
+    background: #FFFFFF;
+    width: 70%;
+    border-radius: 100px;
 }
 
 button{
-    background: #333333;
+    background: rgb(35, 35, 35);
     color: #FFFFFF;
     border: none;
     text-align: center;
@@ -164,36 +244,10 @@ button:hover{
     transition: 150px;
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background: #000000; /* MODIFIER */
-    color: #bababa; /* MODIFIER */
-    border-top: 1px solid #FFFFFF;
-    padding: 10px 0px;
-}
-footer a{
-    text-decoration: underline;
-    color: #bababa; /* MODIFIER */
-    margin-left: 10px;
-}
-
-footer a:hover{
-    color: #FFFFFF;
-}
-
-/* ----- PAGE : # ----- */
+/* ----- PAGE : BLOG ----- */
 
 
-/* ----- PAGE : # ----- */
-
-
-/* ----- PAGE : # ----- */
-
-
-/* ----- PAGE : # ----- */
+/* ----- PAGE : CONTACT ----- */
 
 
 /* ----- MEDIA ----- */
@@ -255,23 +309,24 @@ footer a:hover{
    .principal h1{
     font-size: 3em;
     }
+
     .principal h2{
-    font-size: 0.8em;
+    font-size: 0.6em;
     }
 
    .parent{
     flex-direction: column;
     }
 
-    .child-competence{
+    .child{
         margin: 10px 20px;
         font-size: 0.8em;
     }
-    .child-competence h3{
+    .child h3{
         font-size: 1.8em;
     }
 
-    .child-competence img{
+    .child img{
         height: 30px;
         width: 30px;
     }

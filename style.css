@@ -98,6 +98,7 @@ footer a:hover{
 .lobby-main a{
     text-transform: uppercase;
     color: #FFFFFF;
+    font-size: 1em;
     margin: 10px 0px;
 }
 
@@ -302,6 +303,12 @@ button:hover{
 
     footer{
         font-size: 0.8em;
+    }
+
+    /* ----- LOBBY ----- */
+
+    .lobby-main a{
+        font-size: 0.4em;
     }
    
    /* ----- PORTFOLIO ----- */

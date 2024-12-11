@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Lucas ELANA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-part">
+            <a href="index.html">ACCUEIL</a>
+        </div>
+        <div class="nav-part">
+            <a href="#">Présentation</a>
+            <a href="#">Compétences</a>
+            <a href="#">Projet</a>
+            <a href="#">Contact</a>
+        </div>
+        <a href="#" class="menu">MENU</a>
+    </nav>
+
+    <main class="blog-main">
+        
+        <div class="article">
+            <img src="img/P3R.jpg">
+              <div class="right">
+                <p class="date">mois, DD, YYYY</p>
+                <h2>Titre de l'article</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laudantium voluptatibus aliquam sapiente minus architecto numquam rem laborum, magnam vel quasi fugiat ratione reprehenderit tempore, neque officia fugit enim alias asperiores, animi aspernatur. Aliquam reprehenderit eveniet totam. Minima voluptate sint repellat eaque consequatur praesentium quaerat, maxime libero ad, repellendus dolores facere mollitia minus earum reprehenderit voluptas veritatis ab, aliquam inventore porro dolore quae illum distinctio incidunt. Sapiente cum atque voluptates nam necessitatibus error ipsum qui quo praesentium modi, beatae aspernatur voluptatum doloribus quibusdam maxime blanditiis, ad corporis earum voluptas, deleniti exercitationem minima quisquam! Beatae quaerat soluta cupiditate, a inventore sequi corrupti rem incidunt autem quod? Molestiae reprehenderit, repudiandae quam exercitationem illo error fugit beatae quia odio similique. Debitis maxime, expedita unde eaque nostrum cum ex in perspiciatis totam officiis ipsam.</p>
+                <p class="auteur">Auteur</p>
+              </div>
+        </div>
+
+        <div class="article">
+            <img src="img/P3R.jpg">
+              <div class="right">
+                <p class="date">mois, DD, YYYY</p>
+                <h2>Titre de l'article</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laudantium voluptatibus aliquam sapiente minus architecto numquam rem laborum, magnam vel quasi fugiat ratione reprehenderit tempore, neque officia fugit enim alias asperiores, animi aspernatur. Aliquam reprehenderit eveniet totam. Minima voluptate sint repellat eaque consequatur praesentium quaerat, maxime libero ad, repellendus dolores facere mollitia minus earum reprehenderit voluptas veritatis ab, aliquam inventore porro dolore quae illum distinctio incidunt. Sapiente cum atque voluptates nam necessitatibus error ipsum qui quo praesentium modi, beatae aspernatur voluptatum doloribus quibusdam maxime blanditiis, ad corporis earum voluptas, deleniti exercitationem minima quisquam! Beatae quaerat soluta cupiditate, a inventore sequi corrupti rem incidunt autem quod? Molestiae reprehenderit, repudiandae quam exercitationem illo error fugit beatae quia odio similique. Debitis maxime, expedita unde eaque nostrum cum ex in perspiciatis totam officiis ipsam.</p>
+                <p class="auteur">Auteur</p>
+              </div>
+        </div>
+
+        <div class="article">
+            <img src="img/P3R.jpg">
+              <div class="right">
+                <p class="date">mois, DD, YYYY</p>
+                <h2>Titre de l'article</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laudantium voluptatibus aliquam sapiente minus architecto numquam rem laborum, magnam vel quasi fugiat ratione reprehenderit tempore, neque officia fugit enim alias asperiores, animi aspernatur. Aliquam reprehenderit eveniet totam. Minima voluptate sint repellat eaque consequatur praesentium quaerat, maxime libero ad, repellendus dolores facere mollitia minus earum reprehenderit voluptas veritatis ab, aliquam inventore porro dolore quae illum distinctio incidunt. Sapiente cum atque voluptates nam necessitatibus error ipsum qui quo praesentium modi, beatae aspernatur voluptatum doloribus quibusdam maxime blanditiis, ad corporis earum voluptas, deleniti exercitationem minima quisquam! Beatae quaerat soluta cupiditate, a inventore sequi corrupti rem incidunt autem quod? Molestiae reprehenderit, repudiandae quam exercitationem illo error fugit beatae quia odio similique. Debitis maxime, expedita unde eaque nostrum cum ex in perspiciatis totam officiis ipsam.</p>
+                <p class="auteur">Auteur</p>
+              </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024, by Sontacred
+        <a href="#">repository</a>
+        <a href="#">information</a>
+        <a href="#">contact</a>
+    </footer>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-right")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

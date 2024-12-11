@@ -7,41 +7,33 @@
 }
 
 body{
-    background: url(img/P3R3.jpg) fixed;
-    background-repeat: no-repeat;
-    background-size: cover;}
+    overflow-x: hidden;
+    width: 100vw;
+}
 
-/* ----- NAVBAR ----- */
+/* --------------- NAVBAR --------------- */
 
 nav{
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #FF5757 transparent; /* MODIFIER */
+    background: transparent;
     font-size: 1em;
     width: 100vw;
     z-index: 10;
 }
 
-.nav-left{
+.nav-part{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: none; /* MODIFIER */
-    padding: 15px 10px;
-}
-
-.nav-right{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: none; /* MODIFIER */
+    background: none;
     padding: 15px 10px;
 }
 
 nav a{
-    color: #FFFFFF; /* MODIFIER */
+    color: #FFFFFF;
     backdrop-filter: blur(20px);
     font-weight: 800;
     margin: 0px 8px;
@@ -51,67 +43,103 @@ nav a{
 }
 
 nav a:hover{
-    background: #ababab;
-    transition: 150ms;
+    background: #4a4a4a;
 }
 
 .menu{
     display: none;
 }
 
-/* ----- FOOTER ----- */
+/* --------------- FOOTER --------------- */
 
 footer{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: #101010; /* MODIFIER */
-    color: #bababa; /* MODIFIER */
+    background: #101010;
+    color: #ababab;
     border-top: 1px solid #FFFFFF;
-    padding: 10px 0px;
+    padding: 15px 0px;
+    width: 100vw;
+    bottom: 0;
+    z-index: 30;
 }
 footer a{
     text-decoration: underline;
-    color: #bababa; /* MODIFIER */
+    color: #ababab;
     margin-left: 10px;
 }
 
 footer a:hover{
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-/* ----- PAGE : LOBBY ----- */
+/* --------------- PAGE : LOBBY --------------- */
+
+body{
+    background: #101010;
+}
+
+.lobby-nav a:hover{
+    background: #4a4a4a;
+}
 
 .lobby-main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #101010;
     color: #FFFFFF;
-    font-size: 5em;
-    font-weight: 700;
-    height: 96vh;
+    height: 100vh;
 }
 
 .lobby-main a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-    font-size: 1em;
+    color: #101010;
+    width: 100vw;
     margin: 10px 0px;
+    padding-bottom: 8px;
+    border: 1px solid #101010;
+    transition: 150ms;
 }
 
 .lobby-main a:hover{
-    color: #FF5757;
+    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    transition: 150ms;
+}
+
+.lobby-main a h1{
+    color: #FFFFFF;
+    font-size: 5em;
 }
 
 .lobby-footer{
     position: fixed;
-    width: 100vw;
+    border: none;
 }
 
-/* ----- PAGE : PORTFOLIO ----- */
+.lobby-footer a{
+    text-decoration: underline;
+    color: #ababab;
+    margin-left: 10px;
+}
+
+.lobby-footer a:hover{
+    color: #ffffff;
+}
+
+/* --------------- PAGE : PORTFOLIO --------------- */
+
+.portfolio-body{
+    background: url(img/P3R3.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .portfolio-main{
     color: #FFFFFF;
@@ -127,7 +155,7 @@ footer a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: none; /* MODIFIER */
+    background: none;
     width: 100%;
     height: 100vh;
 }
@@ -148,8 +176,8 @@ footer a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #101010; /* MODIFIER */
-    border-top: 1px solid #ffffff; /* MODIFIER */
+    background: #101010;
+    border-top: 1px solid #ffffff;
     width: 100%;
     height: 100%;
     padding: 20px 0px;
@@ -172,10 +200,12 @@ footer a:hover{
 }
 
 .child{
+    text-align: justify;
     background: #808080;
     color: #101010;
     margin: 0px 15px;
     padding: 30px;
+    min-width: 400px;
     max-width: 450px;
     border-radius: 8px;
 }
@@ -183,10 +213,6 @@ footer a:hover{
 .child h3{
     font-size: 2em;
     margin: 10px 0px;
-}
-
-.child p{
-    text-align: justify;
 }
 
 .aside{
@@ -245,13 +271,44 @@ button:hover{
     transition: 150px;
 }
 
-/* ----- PAGE : BLOG ----- */
+/* --------------- PAGE : BLOG --------------- */
+
+.blog-main{
+    background: #101010;
+    padding: 50px 20px;
+}
+
+.article{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+}
+
+.article img{
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.article .right{
+    padding: 10px 20px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+/* --------------- PAGE : CONTACT --------------- */
 
 
-/* ----- PAGE : CONTACT ----- */
 
+/* --------------- PAGE : INFORMATION --------------- */
 
-/* ----- MEDIA ----- */
+.information-main{
+    text-align: justify;
+    color: #FFFFFF;
+    padding: 200px;
+}
+
+/* --------------- MEDIA --------------- */
 
 @media only screen and (max-width: 550px){
 
@@ -308,7 +365,9 @@ button:hover{
     /* ----- LOBBY ----- */
 
     .lobby-main a{
-        font-size: 0.4em;
+        font-size: 0.6em;
+
+       color: #FFFFFF;
     }
    
    /* ----- PORTFOLIO ----- */

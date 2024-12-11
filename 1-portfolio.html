@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lucas ELANA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+</head>
+<body class="portfolio-body">
+    <nav class="portfolio-nav">
+        <div class="nav-part">
+            <a href="index.html">ACCUEIL</a>
+        </div>
+        <div class="nav-part">
+            <a href="#">Présentation</a>
+            <a href="#">Compétences</a>
+            <a href="#">Projet</a>
+            <a href="#">Contact</a>
+        </div>
+        <a href="#" class="menu">MENU</a>
+    </nav>
+
+    <main class="portfolio-main">
+
+        <div class="principal">
+            <h1>Lucas ELANA</h1>
+            <h2>1ère année - Service Informtique aux Organisations</h2>
+        </div>
+
+        <div class="container">
+            <h1>Compétences</h1>
+            <div class="parent">
+                <div class="child">
+                    <div class="aside">
+                        <h3>HTML / CSS</h3>
+                        <div class="images">
+                            <img src="img/LOGO-HTML.png" height="60px" width="60px">
+                            <img src="img/LOGO-CSS.png" height="60px" width="60px">
+                        </div>
+                    </div>
+                    <div class="trackbarA">
+                        <div class="trackbarB-htmlcss"></div>
+                        90%
+                    </div>
+                </div>
+                <div class="child">
+                    <div class="aside">
+                        <h3>Python</h3>
+                        <div class="images">
+                            <img src="img/LOGO-Python.png" height="60px" width="60px">
+                        </div>
+                    </div>
+                    <div class="trackbarA">
+                        <div class="trackbarB-python"></div>
+                        50%
+                    </div>
+                </div>
+                <div class="child">
+                    <div class="aside">
+                        <h3>Linux</h3>
+                        <div class="images">
+                            <img src="img/LOGO-Linux.png" height="60px" width="60px">
+                        </div>
+                    </div>
+                    <div class="trackbarA">
+                        <div class="trackbarB-linux"></div>
+                        70%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Projets</h1>
+            <div class="parent">
+                <div class="child">
+                    <h3>Sites internet - HTML et CSS</h3>
+                    <p>En vue de mon intérêt pour le webdesign, je consacre une grande partie de mon temps libre à concevoir des sites web pour des utilisations diverses tel que des portfolios, des blogs, des boutiques en ligne ou des présentation d'un sujet.</p>
+                    <a href="index.html">
+                        <button>Parcourir</button>
+                    </a>                
+                </div>
+                <div class="child">
+                    <h3>Gestion de zoo avec python</h3>
+                    <p>Pour apprendre progressivement l'utilisation de python, Nous avons utilisé une base de zoo qui se développait au cour des travaux pratiques et des notions qui nous étaient enseignées avec une meilleure utilisation et optimisation du code.</p>
+                    <a href="1-projet-zoo.html">
+                        <button>Parcourir</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Contact</h1>
+        </div>
+
+    </main>
+    
+    <footer>
+        &copy; 2024, by Sontacred
+        <a href="#">repository</a>
+        <a href="#">information</a>
+        <a href="#">contact</a>
+    </footer>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-right")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>

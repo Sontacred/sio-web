@@ -88,10 +88,6 @@ body{
     background: #101010;
 }
 
-.lobby-nav a:hover{
-    background: #4a4a4a;
-}
-
 .lobby-main{
     display: flex;
     flex-direction: column;
@@ -215,7 +211,6 @@ body{
     color: #101010;
     margin: 0px 15px;
     padding: 30px;
-    min-width: 200px;
     max-width: 450px;
     border-radius: 8px;
 }
@@ -316,7 +311,12 @@ button:hover{
 .information-main{
     text-align: justify;
     color: #FFFFFF;
-    padding: 200px;
+    height: fit-content;
+    padding: 200px 300px;
+}
+
+.information-main p{
+    margin-bottom: 20px;
 }
 
 /* --------------- MEDIA --------------- */
@@ -416,6 +416,12 @@ button:hover{
 
 
    /* ----- INFORMATION ----- */
-
+   
+   .information-main{
+    text-align: justify;
+    color: #FFFFFF;
+    height: fit-content;
+    padding: 60px 30px;
+    }
 
 }

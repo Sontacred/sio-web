@@ -73,7 +73,6 @@ footer{
     z-index: 30;
 }
 footer a{
-    text-decoration: underline;
     color: #ababab;
     margin-left: 10px;
 }
@@ -83,6 +82,7 @@ footer a p{
 }
 
 footer a:hover{
+    text-decoration: underline;
     color: #ffffff;
 }
 
@@ -134,7 +134,6 @@ body{
 }
 
 .lobby-footer a{
-    text-decoration: underline;
     color: #ababab;
     margin-left: 10px;
 }
@@ -144,6 +143,7 @@ body{
 }
 
 .lobby-footer a:hover{
+    text-decoration: underline;
     color: #ffffff;
 }
 
@@ -220,12 +220,12 @@ body{
     color: #101010;
     margin: 0px 15px;
     padding: 30px;
-    width: 450px;
+    width: 430px;
     border-radius: 8px;
 }
 
 .child h3{
-    font-size: 2em;
+    font-size: 1.8em;
     margin: 10px 0px;
 }
 
@@ -248,6 +248,9 @@ body{
 }
 
 .presentation-aside .child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: none;
     color: #FFFFFF;
     padding: 20px;
@@ -259,38 +262,89 @@ body{
     margin-bottom: 10px;
 }
 
+.competence-aside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 16px 0px;
+    padding: 16px;
+    border-radius: 20px;
+    transition: 150ms;
+}
+
+.competence-aside:hover{
+    background: #252525;
+}
+
+.competence-aside p{
+    font-size: 1.8em;
+    width: 90px;
+}
+
+.competence-aside img{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+
 .trackbarA{
     display: flex;
     justify-content: space-between;
-    background: #101010;
     color: #FFFFFF;
     font-weight: 900;
-    margin-top: 15px;
-    height: 10px;
+    height: 25px;
+    width: 600px;
+    margin-left: 20px;
     padding: 5px 10px 5px 5px;
+    border: 1px solid #FFFFFF;
     border-radius: 100px;
 }
 
-.trackbarB-htmlcss{
+.trackbar-html{
     background: #FFFFFF;
     width: 88%;
     border-radius: 100px;
+    transition: 150ms;
 }
 
-.trackbarB-python{
+.trackbar-css{
     background: #FFFFFF;
-    width: 50%;
+    width: 95%;
     border-radius: 100px;
+    transition: 150ms;
 }
 
-.trackbarB-linux{
+.trackbar-python{
+    background: #FFFFFF;
+    width: 60%;
+    border-radius: 100px;
+    transition: 150ms;
+}
+
+.trackbar-linux{
     background: #FFFFFF;
     width: 70%;
     border-radius: 100px;
+    transition: 150ms;
+}
+
+.trackbar-sql{
+    background: #FFFFFF;
+    width: 40%;
+    border-radius: 100px;
+    transition: 150ms;
+}
+
+.trackbar-js{
+    background: #FFFFFF;
+    width: 40%;
+    border-radius: 100px;
+    transition: 150ms;
 }
 
 button{
-    background: rgb(35, 35, 35);
+    background: #292929;
     color: #FFFFFF;
     border: none;
     text-align: center;
@@ -336,7 +390,9 @@ button:hover{
 
 /* --------------- PAGE : CONTACT --------------- */
 
-
+.main-contact{
+    height: 100vh;
+}
 
 /* --------------- PAGE : INFORMATION --------------- */
 
@@ -452,6 +508,11 @@ button:hover{
 
     .presentation-aside .child{
         height: fit-content;
+    }
+
+    .trackbarA{
+        height: 16px;
+        width: 220px;
     }
 
    /* ----- BLOG ----- */

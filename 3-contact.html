@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lucas ELANA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">ACCUEIL</a>
+        </div>
+        <div class="nav-right">
+            <a href="#presentation">Présentation</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projet</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a class="menu">MENU</a>
+    </nav>
+
+    <main class="main-contact">
+    </main>
+    
+    <footer>
+        &copy; 2024, by Sontacred
+        <a href="4-information.html">information</a>
+        <a href="3-contact.html">contact</a>
+        <a href="https://github.com/Sontacred/sio-web" target="_blank">
+            <p><i class="fab fa-github"></i></p>
+        </a>
+        <a href="#">
+            <p><i class="fab fa-linkedin"></i></p>
+        </a>
+        <a href="#">
+            <p><i class="fab fa-instagram"></i></p>
+        </a>
+    </footer>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-right")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>

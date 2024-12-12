@@ -484,10 +484,6 @@ button:hover{
 
     /* ----- LOBBY ----- */
 
-    .CV{
-        width: 300px;
-    }
-
     .lobby-main a{
         font-size: 0.6em;
         color: #FFFFFF;
@@ -510,6 +506,10 @@ button:hover{
 
     .principal h2{
     font-size: 0.8em;
+    }
+
+    .CV{
+        width: 90vw;
     }
 
    .parent{

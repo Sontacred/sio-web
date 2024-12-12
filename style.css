@@ -173,6 +173,7 @@ body{
     background: none;
     width: 100%;
     height: 100vh;
+    padding: 0px 300px;
 }
 
 .principal h1{
@@ -195,7 +196,7 @@ body{
     border-top: 1px solid #ffffff;
     width: 100%;
     height: 100%;
-    padding: 20px 0px;
+    padding: 20px 300px;
 }
 
 .container h1{
@@ -260,7 +261,7 @@ body{
 }
 
 .presentation-aside p{
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .competence-aside{
@@ -484,7 +485,7 @@ button:hover{
     /* ----- LOBBY ----- */
 
     .CV{
-        width: 400px;
+        width: 300px;
     }
 
     .lobby-main a{
@@ -498,6 +499,10 @@ button:hover{
     }
    
    /* ----- PORTFOLIO ----- */
+
+   .portfolio-main{
+        padding: 0px;
+    }
 
    .principal h1{
     font-size: 3em;

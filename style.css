@@ -78,6 +78,10 @@ footer a{
     margin-left: 10px;
 }
 
+footer a p{
+    margin-left: 5px;
+}
+
 footer a:hover{
     color: #ffffff;
 }
@@ -133,6 +137,10 @@ body{
     text-decoration: underline;
     color: #ababab;
     margin-left: 10px;
+}
+
+.lobby-footer a p{
+    margin-left: 5px;
 }
 
 .lobby-footer a:hover{
@@ -193,6 +201,7 @@ body{
     text-transform: uppercase;
     font-size: 3em;
     font-weight: 800;
+    margin: 20px 0px;
 }
 
 .parent{
@@ -201,7 +210,7 @@ body{
     justify-content: center;
     background: none;
     height: fit-content;
-    margin: 30px;
+    margin: 0px 30px;
     width: 100%;
 }
 
@@ -211,7 +220,7 @@ body{
     color: #101010;
     margin: 0px 15px;
     padding: 30px;
-    max-width: 450px;
+    width: 450px;
     border-radius: 8px;
 }
 
@@ -220,11 +229,34 @@ body{
     margin: 10px 0px;
 }
 
+.child img{
+    margin-left: 20px;
+}
+
 .aside{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.presentation-aside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation-aside .child{
+    background: none;
+    color: #FFFFFF;
+    padding: 20px;
+    max-width: 400px;
+    height: 500px;
+}
+
+.presentation-aside p{
+    margin-bottom: 10px;
 }
 
 .trackbarA{
@@ -291,8 +323,8 @@ button:hover{
 }
 
 .article img{
-    height: 300px;
-    width: 500px;
+    height: 250px;
+    width: 400px;
     border-radius: 20px;
 }
 
@@ -312,7 +344,7 @@ button:hover{
     text-align: justify;
     color: #FFFFFF;
     height: fit-content;
-    padding: 200px 300px;
+    padding: 50px 300px;
 }
 
 .information-main p{
@@ -321,7 +353,7 @@ button:hover{
 
 /* --------------- MEDIA --------------- */
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 600px){
 
    /* ----- NAVBAR ----- */
 
@@ -331,6 +363,9 @@ button:hover{
 
     .menu{
         display: block;
+    }
+    .menu:hover{
+        cursor: pointer;
     }
 
     .nav-left{
@@ -348,7 +383,7 @@ button:hover{
         background: #101010;
         backdrop-filter: blur(40px);
         border-right: 2px solid #FFFFFF;
-        width: 100%;
+        width: 70%;
         height: 100vh;
         margin-left: -110%;
         transition: 150ms;
@@ -392,19 +427,31 @@ button:hover{
 
    .parent{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     }
 
     .child{
+        width: max-content;
+        width: 360px;
         margin: 10px 20px;
         font-size: 0.8em;
     }
     .child h3{
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .child img{
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .presentation-aside{
+        flex-direction: column;
+    }
+
+    .presentation-aside .child{
+        height: fit-content;
     }
 
    /* ----- BLOG ----- */
@@ -421,7 +468,7 @@ button:hover{
     text-align: justify;
     color: #FFFFFF;
     height: fit-content;
-    padding: 60px 30px;
+    font-size: 0.8em;
+    padding: 60px 30px 20px 30px;
     }
-
 }

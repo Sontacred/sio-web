@@ -468,7 +468,12 @@ button:hover{
 
     .lobby-main a{
         font-size: 0.6em;
-       color: #FFFFFF;
+        color: #FFFFFF;
+    }
+
+    .lobby-main p{
+        font-size: 1.2em;
+        color: #FFFFFF;
     }
    
    /* ----- PORTFOLIO ----- */
@@ -478,7 +483,7 @@ button:hover{
     }
 
     .principal h2{
-    font-size: 0.6em;
+    font-size: 0.8em;
     }
 
    .parent{
